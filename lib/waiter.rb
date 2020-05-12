@@ -13,5 +13,8 @@ class Waiter
     @@all
   end
 
+  def meals
+    Meal.all.select {}|meal| meal.waiter}
+  end
 
 end
