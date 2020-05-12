@@ -24,7 +24,7 @@ class Customer
 
   def waiters
 #returns an Array of Waiter instances associated with this customer's meals
-  meals.select {|meal| meal.waiter == self}
+  meals.map {|meal| meal.waiter}
   end
 
 end
