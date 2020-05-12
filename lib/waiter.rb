@@ -13,6 +13,4 @@ class Waiter
     @@all
   end
 
-  def 
-
 end
