@@ -1,6 +1,6 @@
 class Waiter
   attr_accessor :name, :experience
-  
+
 @@all = []
 
   def initialize(name, experience)
@@ -14,5 +14,5 @@ class Waiter
   end
 
   def 
-  
+
 end
