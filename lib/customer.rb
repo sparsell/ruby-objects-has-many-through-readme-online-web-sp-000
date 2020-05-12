@@ -1,5 +1,6 @@
 class Customer
   attr_accessor :name, :age, :waiter, :total, :tip
+  
   @@all = []
 
   def initialize (name, age)
