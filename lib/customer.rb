@@ -19,7 +19,7 @@ class Customer
   end
   #returns an Array of Meal instances associated with this customer
   def meals
-    Meal.all.collect {|meal| meal.customer == self}
+    Meal.all.select {|meal| meal.customer == self}
   end
 
   def waiters
