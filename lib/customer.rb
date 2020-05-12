@@ -1,6 +1,6 @@
 class Customer
   attr_accessor :name, :age, :waiter, :total, :tip
-  
+
   @@all = []
 
   def initialize (name, age)
@@ -14,8 +14,8 @@ class Customer
   end
 
 # initializes a meal using the current Customer instance, a provided Waiter instance and a total
-  def new_meal
-    Meal.new(waiter, total)
+  def new_meal(waiter, total, tip=0)
+    Meal.new(waiter, self, total, tip)
   end
   #returns an Array of Meal instances associated with this customer
   def meals
